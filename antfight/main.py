@@ -338,7 +338,7 @@ def run_pvp_placement():
 	player_money = [20, 20]
 	player_turn = 0
 	player_ants = [[], []]
-	unit_cost = {"scout": 2, "healer": 4, "fighter": 6, "superman": 40}
+	unit_cost = {"scout": 3, "healer": 4, "fighter": 6, "superman": 40}
 	total_spent = 0
 	total_spent_max = MAX_MONEY  # use the max money selected on main menu
 
@@ -361,7 +361,7 @@ def run_pvp_placement():
 		selected_unit.set(role)
 		update_status()
 
-	tk.Button(placement_root, text="Scout ($2)", command=lambda: select_unit("scout")).pack(side="left")
+	tk.Button(placement_root, text="Scout ($3)", command=lambda: select_unit("scout")).pack(side="left")
 	tk.Button(placement_root, text="Healer ($4)", command=lambda: select_unit("healer")).pack(side="left")
 	tk.Button(placement_root, text="Fighter ($6)", command=lambda: select_unit("fighter")).pack(side="left")
 	superman_btn = tk.Button(placement_root, text="Superman ($40)", command=lambda: select_unit("superman"))
